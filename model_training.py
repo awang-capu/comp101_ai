@@ -269,6 +269,7 @@ def generate_and_print_sample(model, tokenizer, device, start_context):
     model.train()
 
     #####
+if __name__ == "__main__":
     # Let's train the model
     import time
     start_time = time.time()
@@ -291,7 +292,6 @@ def generate_and_print_sample(model, tokenizer, device, start_context):
     print(f"Training completed in {execution_time_minutes:.2f} minutes.")
 
 
-if __name__ == "__main__":
     inference_device = torch.device("cpu")
     model.to(inference_device)
     model.eval()
