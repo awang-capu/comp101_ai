@@ -11,7 +11,7 @@
 
 import torch
 import tiktoken
-from gpt_model_4 import GPTModel, generate_text_simple
+from model_initial import GPTModel, generate_text_simple
 from torch.utils.data import Dataset, DataLoader
 torch.manual_seed(123)
 
